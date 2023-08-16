@@ -9,7 +9,8 @@ const HomePage = () => {
     <div className='relative'>
       <FirstSection/>
       <FloatingBox/>
-      <SecondSection index={0} height={40} width={270} isSecondButton={true}/>
+      <div className='w-[100%] h-[140px]'></div>
+      <SecondSection index={0} height={40} width={270} isSecondButton={false} imgheight={470} imgwidth={450}/>
       <Curtains/>
     </div>
   )

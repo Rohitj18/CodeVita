@@ -23,7 +23,7 @@ const FirstSection = () => {
                         available at the lowest cost.
                     </p>
                     <div>
-                        <button className={`text-white font-semibold text-[18px] rounded-md w-[250px] h-[35px] bg-gradient-to-r hover:bg-gradient-to-l from-[#f96c23] to-[#fe8f01] mt-10 ml-3 shadow-2xl flex flex-row gap-3 items-center px-[14px] justify-center`}>
+                        <button className={`text-white font-semibold text-[18px] rounded-md w-[250px] h-[38px] bg-gradient-to-r hover:bg-gradient-to-l from-[#f96c23] to-[#fe8f01] mt-10 ml-3 shadow-2xl flex flex-row gap-3 items-center px-[14px] justify-center`}>
                             <div>Explore More</div>
                             <BsArrowRight size={24} />
                         </button>

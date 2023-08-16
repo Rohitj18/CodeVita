@@ -39,7 +39,8 @@
     justify-content: space-between;
     padding-inline: 2rem;
     padding-block: 1.3rem;
-    background-color: rgb(67, 114, 244);
+    /* background-color: rgb(67, 114, 244); */
+    background-color: #1b2265;
     font-size: 1.2rem;
     font-weight: 500;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
