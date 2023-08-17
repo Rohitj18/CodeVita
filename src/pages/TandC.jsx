@@ -2,7 +2,7 @@ import React from 'react'
 
 const TandC = () => {
   return (
-    <div className='mt-[500px]'>
+    <div className='relative'>
       TandC
     </div>
   )

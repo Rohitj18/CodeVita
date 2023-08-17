@@ -1,0 +1,32 @@
+.btn-pink{
+    position: relative;
+    background-color: #f96c23;
+    padding: 0.8rem 2.3rem;
+    color: white;
+    font-size: 18px;
+    box-shadow: 5px 5px 7px 0px #0000003f;
+    z-index: 1;
+
+}
+
+.btn-pink:hover{
+    color:#f96c23;
+}
+
+.btn-pink::before{
+    content: "";
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 1s;
+    z-index: -1;
+}
+
+.btn-pink:hover::before{
+    transform: scaleX(1);
+}
