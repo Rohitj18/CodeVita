@@ -6,7 +6,6 @@ import img1 from '../assets/image1.png'
 import img2 from '../assets/image2.gif'
 import img3 from '../assets/image3.webp'
 import { BsArrowRight } from 'react-icons/bs';
-import { text } from '@fortawesome/fontawesome-svg-core';
 
 
 const SecondSection = ({ index, isSecondButton, height, width,imgheight,imgwidth }) => {
@@ -81,7 +80,7 @@ const SecondSection = ({ index, isSecondButton, height, width,imgheight,imgwidth
                     </div>
                 </div>
                 {/* right section */}
-                <div className='max-w-[50%] w-[50%] flex pl-[130px]'>
+                <div className='max-w-[50%] w-[50%]  max-h-[470px] flex pl-[130px]'>
                     <img src={imageArr[index]} alt="" className={`w-[${imgwidth}px] h-[${imgheight}px]`} />
                 </div>
             </div>

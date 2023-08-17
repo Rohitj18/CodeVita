@@ -10,6 +10,7 @@ module.exports = {
     extend: {
       colors: {
         'blue-rgba': 'rgba(67, 114, 244)',
+        'off-white': '#F5F5F4'
       },
     },
   },

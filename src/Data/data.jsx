@@ -17,7 +17,7 @@ export const data = [
     src:"../assets/coursepageimages/datascienceimg.png",
     highlight1: "Machine Learning",
     highlight2: "Data Analysis",
-    highlight3: "Probability and Statistics"
+    highlight3: "Probability & Stats"
 },
 
 {
