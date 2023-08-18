@@ -41,5 +41,15 @@ export const textDetails = [
         buttonText:"Review Testimonials",
         buttonText2:"Review Syllabus",
         src: '../assets/cyberImg.webp'
+    },
+    {
+        id:"5",
+        heading:"",
+        subHeading:"This website is operated by Codevita Live. Throughout the site, the terms “we”, “us” and “our” refer to Codevita Live offers this website, including all information, tools and services available from this site to you, the user, conditioned upon your acceptance of all terms, conditions, policies and notices stated here. By visiting our site and/ or purchasing something from us, you engage in our “Service” and agree to be bound by the following terms and conditions (“Terms of Service”, “Terms”), including those additional terms and conditions and policies referenced herein and/or available by hyperlink. These Terms of Service apply to all users of the site, including without limitation users who are browsers, vendors, customers, merchants, and/ or contributors of content. Please read these Terms of Service carefully before accessing or using our website. By accessing or using any part of the site, you agree to be bound by these Terms of Service. If you do not agree to all the terms and conditions of this agreement, then you may not access the website or use any services.We reserve the right to update. It is your responsibility to check this page periodically for changes. Your continued use of or access to the website following the posting of any changes constitutes acceptance of those changes.",
+        points:[],
+        buttonText:null,
+        buttonText2:"Review Syllabus",
+        src: '../assets/cyberImg.webp'
     }
+
 ]

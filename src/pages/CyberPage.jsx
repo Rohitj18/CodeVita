@@ -2,7 +2,7 @@ import React from 'react'
 import CoursesFirstSection from '../components/utilityComponents/CoursesFirstSection'
 import SecondSection from '../components/SecondSection'
 import Form from '../components/utilityComponents/Form'
-import cybergif from '../assets/cyberbanner.jpg'
+import cybergif from '../assets/ezgif.com-crop.gif'
 const CyberPage = () => {
   return (
     <div>
