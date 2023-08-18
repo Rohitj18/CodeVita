@@ -1,6 +1,6 @@
 import React from 'react'
 import CoursesFirstSection from '../components/utilityComponents/CoursesFirstSection'
-import SecondSection from '../components/SecondSection'
+import SecondSection from '../components/Sections/SecondSection'
 import Form from '../components/utilityComponents/Form'
 import cybergif from '../assets/ezgif.com-crop.gif'
 const CyberPage = () => {

@@ -1,5 +1,5 @@
 import React from 'react'
-import Banner from '../assets/banner.mp4'
+import Banner from '../../assets/banner.mp4'
 import { useTypewriter } from 'react-simple-typewriter'
 import { BsArrowRight } from 'react-icons/bs'
 const FirstSection = () => {

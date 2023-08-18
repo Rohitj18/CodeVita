@@ -1,14 +1,14 @@
 import React from "react";
 import "./Curtains.css";
 import { useState } from "react";
-import googlelogo from '../assets/google.png'
-import whitegirl from '../assets/white-girl.png'
-import blackguy from '../assets/black-guy.png'
-import whitegirl2 from '../assets/white-girl2.png'
-import indianboy from '../assets/indian-boy.png'
-import jpmorganlogo from '../assets/jp-morgan-chase.png'
-import cnlogo from '../assets/cn-logo.png'
-import alvaralogo from '../assets/avalaralogo.png'
+import googlelogo from '../../assets/google.png'
+import whitegirl from '../../assets/white-girl.png'
+import blackguy from '../../assets/black-guy.png'
+import whitegirl2 from '../../assets/white-girl2.png'
+import indianboy from '../../assets/indian-boy.png'
+import jpmorganlogo from '../../assets/jp-morgan-chase.png'
+import cnlogo from '../../assets/cn-logo.png'
+import alvaralogo from '../../assets/avalaralogo.png'
 
 const Curtains = () => {
 

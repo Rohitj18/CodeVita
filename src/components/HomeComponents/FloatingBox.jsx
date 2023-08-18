@@ -1,7 +1,7 @@
 import React from 'react'
-import icon1 from '../assets/boxicon1.svg'
-import icon2 from '../assets/boxicon2-9658.svg'
-import icon3 from '../assets/boxicon3.svg'
+import icon1 from '../../assets/boxicon1.svg'
+import icon2 from '../../assets/boxicon2-9658.svg'
+import icon3 from '../../assets/boxicon3.svg'
 
 const FloatingBox = () => {
   return (

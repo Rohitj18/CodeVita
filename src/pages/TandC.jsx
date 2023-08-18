@@ -1,7 +1,7 @@
 import React from 'react'
 import tncimg from '../assets/terms-and-conditions.jpg'
-import SecondSection from '../components/SecondSection'
-import TnCsection from '../components/TnCsection'
+import SecondSection from '../components/Sections/SecondSection'
+import TnCsection from '../components/TncComponents/TnCsection'
 
 const TandC = () => {
   return (

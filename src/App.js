@@ -1,5 +1,5 @@
 import "./App.css";
-import Nav from "./components/Nav";
+import Nav from "./components/utilityComponents/Nav";
 import HomePage from "./pages/HomePage";
 import DataSciencePage from "./pages/DataSciencePage";
 import CyberPage from "./pages/CyberPage";

@@ -1,8 +1,8 @@
 import React from 'react'
 import CoursesFirstSection from '../components/utilityComponents/CoursesFirstSection'
-import SecondSection from '../components/SecondSection'
-import SkillBreweryForm from '../components/SkillBreweryForm'
-import SkillbreweryVideoSection from '../components/SkillbreweryVideoSection'
+import SecondSection from '../components/Sections/SecondSection'
+import SkillBreweryForm from '../components/SkillbreweryComponents/SkillBreweryForm'
+import SkillbreweryVideoSection from '../components/SkillbreweryComponents/SkillbreweryVideoSection'
 
 const SkillsBrewry = () => {
   return (

@@ -1,9 +1,9 @@
 import React from 'react'
-import FirstSection from '../components/FirstSection'
-import FloatingBox from '../components/FloatingBox'
-import SecondSection from '../components/SecondSection'
-import Curtains from '../components/Curtains'
-import CardsSection from '../components/CardsSection'
+import FirstSection from '../components/HomeComponents/FirstSection'
+import FloatingBox from '../components/HomeComponents/FloatingBox'
+import SecondSection from '../components/Sections/SecondSection'
+import Curtains from '../components/HomeComponents/Curtains'
+import CardsSection from '../components/HomeComponents/CardsSection'
 
 const HomePage = () => {
   return (

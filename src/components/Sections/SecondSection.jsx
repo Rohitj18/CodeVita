@@ -1,11 +1,11 @@
 import React from 'react';
-import check from '../assets/check.svg';
-import { textDetails } from '../Data/text';
-import img0 from '../assets/image0.jpg'
-import img1 from '../assets/image1.png'
-import img2 from '../assets/image2.gif'
-import img3 from '../assets/image3.webp'
-import img4 from '../assets/tncillustration.jpg'
+import check from '../../assets/check.svg';
+import { textDetails } from '../../Data/text';
+import img0 from '../../assets/image0.jpg'
+import img1 from '../../assets/image1.png'
+import img2 from '../../assets/image2.gif'
+import img3 from '../../assets/image3.webp'
+import img4 from '../../assets/tncillustration.jpg'
 import { BsArrowRight } from 'react-icons/bs';
 
 

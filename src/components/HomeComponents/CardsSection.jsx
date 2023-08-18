@@ -1,5 +1,5 @@
 import React from 'react'
-import homeimg from '../assets/homeimg-removebg-preview.png'
+import homeimg from '../../assets/homeimg-removebg-preview.png'
 import './CardsSection.css'
 const CardsSection = () => {
     return (

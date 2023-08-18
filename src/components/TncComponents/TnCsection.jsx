@@ -1,5 +1,5 @@
 import React from 'react'
-import {tncdata} from '../Data/tncdata'
+import {tncdata} from '../../Data/tncdata'
 
 const TnCsection = () => {
   return (
