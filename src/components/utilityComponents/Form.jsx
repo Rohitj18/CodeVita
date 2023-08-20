@@ -1,15 +1,18 @@
 import React from 'react'
 import { useState } from 'react';
+import Axios from 'axios';
+import { toast } from 'react-hot-toast';
+import { useLocation } from 'react-router-dom';
 
 
 const Form = () => {
 
     const [formData, setFormData] = useState({
-        firstName: "",
-        college: "", degree: "", sem: "", email: "", phoneNumber: "", date: Date.now()
+        mame: "",
+        college: "", degree: "", semester: "", email: "", phoneno: "", date: Date.now()
     });
 
-
+    var location = useLocation();
 
     function changeHandler(event) {
 
@@ -21,11 +24,19 @@ const Form = () => {
         });
     }
 
-    function submitHandler(event) {
-        // event.preventDefault();
-        //print
-        console.log("Finally printing the entireform ka data ........")
-        console.log(formData)
+    const submitHandler = async (event) => {
+        event.preventDefault();
+        formData["location"]=location.pathname.substring(1,location.pathname.length);
+        console.log(formData);
+        const response = await Axios.post("http://localhost:4000/api/v1/createuser", formData).then(function (response) {
+            toast.success("Form Submitted Sucessfully")
+            console.log(response);
+        }).catch(function (error) {
+            toast.error("Error Occured");
+            console.log(error);
+        });
+        console.log(response);
+        console.log(formData);
     }
 
 
@@ -40,8 +51,8 @@ const Form = () => {
                 <form onSubmit={submitHandler} className='flex flex-col  w-[100%] h-[100%] gap-4 p-[20px]' >
 
 
-                    <label htmlFor="firtname" className='text-black'>Name : </label>
-                    <input className="h-[40px] px-[8px] focus:outline-none border-b-2 border-blue-rgba border-solid text-black " id='firstname' type="text" placeholder='first name' onChange={changeHandler} name="firstName" value={formData.firstName} />
+                    <label htmlFor="name" className='text-black'>Name : </label>
+                    <input className="h-[40px] px-[8px] focus:outline-none border-b-2 border-blue-rgba border-solid text-black " id='name' type="text" placeholder='Name' onChange={changeHandler} name="name" value={formData.name} />
 
                     <label htmlFor="college" className='text-black'>College : </label>
                     <input className="h-[40px] px-[8px] focus:outline-none border-b-2 border-blue-rgba border-solid text-black  " id='college' type="text" placeholder='College Name' onChange={changeHandler} name="college" value={formData.college} />
@@ -50,13 +61,13 @@ const Form = () => {
                     <input className="h-[40px] px-[8px] focus:outline-none border-b-2 border-blue-rgba border-solid text-black " id='degree' type="text" placeholder='Degree' onChange={changeHandler} name="degree" value={formData.degree} />
 
                     <label htmlFor="sem" className='text-black'>Semester : </label>
-                    <input className="h-[40px] px-[8px] focus:outline-none border-b-2 border-blue-rgba border-solid text-black " id='sem' type="number" placeholder='Semester' onChange={changeHandler} name="sem" value={formData.sem} />
+                    <input className="h-[40px] px-[8px] focus:outline-none border-b-2 border-blue-rgba border-solid text-black " id='semester' type="number" placeholder='Semester' onChange={changeHandler} name="semester" value={formData.semester} />
 
                     <label htmlFor="email" className='text-black'>E-mail : </label>
                     <input className="h-[40px] px-[8px] focus:outline-none border-b-2 border-blue-rgba border-solid text-black " id='email' type="email" placeholder='E-mail' onChange={changeHandler} name="email" value={formData.email} />
 
                     <label htmlFor="phone" className='text-black'>Phone no. : </label>
-                    <input className="h-[40px] px-[8px] focus:outline-none border-b-2 border-blue-rgba border-solid text-black " id='phone' type="number" placeholder='Phone number' onChange={changeHandler} name="phoneNumber" value={formData.phoneNumber} />
+                    <input className="h-[40px] px-[8px] focus:outline-none border-b-2 border-blue-rgba border-solid text-black " id='phone' type="number" placeholder='Phone number' onChange={changeHandler} name="phoneno" value={formData.phoneno} />
 
                     <label htmlFor="date" className='text-black'>When would you like to start ? </label>
                     <input className="h-[40px] px-[8px] focus:outline-none border-b-2 border-blue-rgba border-solid text-black " id='date' type="date" placeholder='Current Semester' onChange={changeHandler} name="date" value={formData.date} />
@@ -64,7 +75,7 @@ const Form = () => {
                         <div>Complete Enrollment</div>
                     </button>
                 </form>
-                
+
             </div>
         </div>
     )

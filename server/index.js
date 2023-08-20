@@ -1,4 +1,5 @@
 const express = require("express")
+const cors = require("cors");
 const app = express()
 require("dotenv").config();
 
@@ -13,6 +14,13 @@ database.dbConnect();
 
 //middleware
 app.use(express.json());
+app.use(
+    cors({
+        origin:"http://localhost:3000",
+        credentials:true,
+        methods: ['GET','POST','DELETE','UPDATE','PUT','PATCH']
+    })
+);
 
 app.use("/api/v1",userRoutes);
 

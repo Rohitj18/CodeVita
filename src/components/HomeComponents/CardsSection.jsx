@@ -10,7 +10,7 @@ const CardsSection = () => {
                         <div className='bg-black w-[53px] h-[4px]'></div>
                         <div className='bg-black w-[4px] h-[4px]'></div>
             </div>
-            <div className='w-[80.7%] flex flex-row items-center justify-between gap-3 mx-auto'>
+            <div className='w-[80.7%] flex flex-row items-center justify-between gap-3 mx-auto mb-[4%]'>
                 {/* box 1 */}
                 <div className='bg-off-white flex flex-col gap-4 justify-center items-center w-[383px] h-[370px] px-[25px] py-[30px] rounded-xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] hover:scale-[1.1] transition duration-300 ease-in'>
                     <div className='flex justify-center items-center'>
